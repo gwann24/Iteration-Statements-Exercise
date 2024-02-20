@@ -32,8 +32,18 @@ namespace IterationStatements
         }
         
         //Write a method to check whether a given number is even or odd
+
+        public static string EvenOrOdd (int num3)
+        {
+            return ((num3 % 2) == 0 ? "Even" : "Odd");
+        }
         
         //Write a method to check whether a given number is positive or negative
+
+        public static string PosOrNeg (int num4)
+        {
+            return (num4 < 0) ? "Negative" : "Positive";
+        }
         
         //Write a method to read the age of a candidate and determine whether they can vote.
         //Hint: Use Parse or the safer TryParse() for an extra challenge
@@ -51,7 +61,9 @@ namespace IterationStatements
         {
             //PrintNumberRange();
             //Skip3Print();
-            Console.WriteLine($"Does 5 = 5? {AreWeEqual(5,5)}");
+            //Console.WriteLine($"Does 5 = 5? {AreWeEqual(5,5)}");
+            //Console.WriteLine($"Is 5 Even or Odd? {EvenOrOdd(5)}");
+            //Console.WriteLine($"Is 3 Positive or Negative? {PosOrNeg(3)}");
         }
     }
 }
