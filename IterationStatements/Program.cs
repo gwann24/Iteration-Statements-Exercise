@@ -50,6 +50,18 @@ namespace IterationStatements
         //Parse()
         //TryParse()
 
+        public static void CheckVotingAge()
+        {
+            Console.WriteLine("Enter your age:");
+            int.TryParse(Console.ReadLine(), out var age);
+            if (age >= 18)
+            {
+                Console.WriteLine("Congratulations, you are eligible to vote!");
+            } else
+            {
+                Console.WriteLine("Sorry, you are note eligible to vote.");
+            }
+         }
         //Heatin Up Section:
         //Write a method to check if an integer(from the user) is in the range -10 to 10
         
@@ -64,6 +76,7 @@ namespace IterationStatements
             //Console.WriteLine($"Does 5 = 5? {AreWeEqual(5,5)}");
             //Console.WriteLine($"Is 5 Even or Odd? {EvenOrOdd(5)}");
             //Console.WriteLine($"Is 3 Positive or Negative? {PosOrNeg(3)}");
+            //CheckVotingAge();
         }
     }
 }
