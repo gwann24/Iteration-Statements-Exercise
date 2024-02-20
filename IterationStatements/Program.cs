@@ -53,7 +53,7 @@ namespace IterationStatements
         public static void CheckVotingAge()
         {
             Console.WriteLine("Enter your age:");
-            int.TryParse(Console.ReadLine(), out var age);
+            int.TryParse(Console.ReadLine(), out int age);
             if (age >= 18)
             {
                 Console.WriteLine("Congratulations, you are eligible to vote!");
@@ -65,6 +65,17 @@ namespace IterationStatements
         //Heatin Up Section:
         //Write a method to check if an integer(from the user) is in the range -10 to 10
         
+        public static void CheckUserNumber()
+        {
+            Console.WriteLine("Enter a Number:");
+            int.TryParse(Console.ReadLine(), out int userInput);
+            bool inRange = false;
+            if (userInput >= -10 && userInput <= 10)
+            {
+                inRange = true;
+            }
+            Console.WriteLine($"Is your number {userInput} between -10 and 10? {inRange}");
+        }
         //Write a method to display the multiplication table(from 1 to 12) of a given integer
 
 
@@ -77,6 +88,7 @@ namespace IterationStatements
             //Console.WriteLine($"Is 5 Even or Odd? {EvenOrOdd(5)}");
             //Console.WriteLine($"Is 3 Positive or Negative? {PosOrNeg(3)}");
             //CheckVotingAge();
+            //CheckUserNumber();
         }
     }
 }
