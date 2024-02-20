@@ -78,6 +78,14 @@ namespace IterationStatements
         }
         //Write a method to display the multiplication table(from 1 to 12) of a given integer
 
+        public static void TimesTable1to12(int num5)
+        {
+            Console.WriteLine($"The multiplication table for {num5} from 1 to 12 is.");
+            for (int t = 1;t <=12; t++)
+            {
+                Console.WriteLine($"{t} - {num5 * t}");
+            }
+        }
 
         //Call the methods to test them in the Main method below
         static void Main(string[] args)
@@ -89,6 +97,7 @@ namespace IterationStatements
             //Console.WriteLine($"Is 3 Positive or Negative? {PosOrNeg(3)}");
             //CheckVotingAge();
             //CheckUserNumber();
+            TimesTable1to12(5);
         }
     }
 }
