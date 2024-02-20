@@ -83,21 +83,54 @@ namespace IterationStatements
             Console.WriteLine($"The multiplication table for {num5} from 1 to 12 is.");
             for (int t = 1;t <=12; t++)
             {
-                Console.WriteLine($"{t} - {num5 * t}");
+                Console.WriteLine($"{t} x {num5} = {num5 * t}");
             }
         }
 
         //Call the methods to test them in the Main method below
         static void Main(string[] args)
         {
-            //PrintNumberRange();
-            //Skip3Print();
-            //Console.WriteLine($"Does 5 = 5? {AreWeEqual(5,5)}");
-            //Console.WriteLine($"Is 5 Even or Odd? {EvenOrOdd(5)}");
-            //Console.WriteLine($"Is 3 Positive or Negative? {PosOrNeg(3)}");
-            //CheckVotingAge();
-            //CheckUserNumber();
-            TimesTable1to12(5);
+            Console.WriteLine("Lets have some FUN!\nHere are all the numbers from 1000 to -1000\nPress any key to start");
+            Console.ReadLine();
+            Console.Clear();
+            PrintNumberRange();
+            Console.WriteLine("\nDone\nNow let's skip count by 3 until we reach 999\nPress any key to start");
+            Console.ReadLine();
+            Console.Clear();
+            Skip3Print();
+            Console.WriteLine("\nDone\nLet's compare two numbers\nPress any key to start");
+            Console.ReadLine();
+            Console.Clear();
+            Console.WriteLine("Enter your first number");
+            int.TryParse(Console.ReadLine(),out int compNum1);
+            Console.WriteLine("Enter your second number");
+            int.TryParse(Console.ReadLine(),out int compNum2);
+            Console.WriteLine($"Does {compNum1} = {compNum2}? {AreWeEqual(compNum1,compNum2)}");
+            Console.WriteLine("\nDone\nWe are rock'n and roll'n now!\nPress any key to continue");
+            Console.ReadLine();
+            Console.Clear();
+            Console.WriteLine("Enter a number");
+            int.TryParse(Console.ReadLine(), out int userNum1);
+            Console.WriteLine($"Is {userNum1} Even or Odd? {EvenOrOdd(userNum1)}");
+            Console.WriteLine("\n\nEnter another number, use - for negative number");
+            int.TryParse(Console.ReadLine(), out int userNum2);
+            Console.WriteLine($"Is {userNum2} Positive or Negative? {PosOrNeg(userNum2)}");
+            Console.WriteLine("\nDone\nLet's see if you can vote.\nPress any key to start");
+            Console.ReadLine();
+            Console.Clear();
+            CheckVotingAge();
+            Console.WriteLine("\nDone\nAlmost Done.\nPress any key to continue");
+            Console.ReadLine();
+            Console.Clear();
+            CheckUserNumber();
+            Console.WriteLine("\nDone\nLast one, I am going to help you with first grade math!\nPress any key to start");
+            Console.ReadLine();
+            Console.Clear();
+            Console.WriteLine("Enter a number");
+            int.TryParse(Console.ReadLine(), out int userNum3);
+            TimesTable1to12(userNum3);
+            Console.WriteLine("\n\nFINISHED!!!");
+            Console.ReadLine();
         }
     }
 }
